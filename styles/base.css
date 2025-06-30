@@ -1,8 +1,9 @@
 /* Base styles */
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, "Roboto";
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, "Roboto"; */
   /* font-family: sans-serif; */
+  font-family: "Roboto", sans-serif;
   background-color: #f7f9fa;
   color: #333;
   display: grid;
