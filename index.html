@@ -3,9 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <meta name="description" content="My landing home page for the course wdd131 which contain a breif summary and detail about me, WDD-131 - Dynamic Web Fundamentals, created by Favour Igein." />
+    <meta name="author" content="Favour Igein">
+    <title>WDD 131 - Dynamic Web Fundamentals - Favour Igein</title>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to WDD 131</h1>
+    
+  <header>
+    <div class="header-content"><span id="course-title">WDD 131 - Dynamic Web Fundamentals</span></div>
+    <div class="header-nav">
+    <nav>
+      <a href="https://www.linkedin.com/in/favour-igein-435715331">LinkedIn</a>
+      <a href="https://byupw.instructure.com/">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+      <a href="#">Final Product</a>
+    </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Favour Igein</h1>
+
+    <section class="card">
+      <div class="bio-text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porttitor orci nec nulla scelerisque, at laoreet ex condimentum...</p>
+      </div>
+      <div class="bio-image">
+        <img src="images/profile.jpg" alt="My Personal Photo">
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <section class="card">
+      <div class="country-flag">
+        <img src="images/Flag of Nigeria.jpeg" alt="Flag of My Country" class="img-responsive">
+        <p>Official Flag Of Nigeria</p>
+      </div>
+      <div class="country-info">
+        <h2>Nigeria</h2>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at blandit justo. Pellentesque habitant morbi tristique...</p>
+      </div>
+    </section>
+  
+  </main>
+
+  <!-- <aside>
+    Aside Content
+  </aside> -->
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> 😎 Favour Igein 😎 Nigeria</p>
+    <!-- <p>Last Modified: June 2025</p> -->
+     <p id="lastModified"></p>
+  </footer>
+
 </body>
 </html>
