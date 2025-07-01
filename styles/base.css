@@ -159,8 +159,11 @@ aside {
 ul{
   margin: 50px;
 }
-li{
+li {
   padding: 50px;
+  text-decoration: underline;
+  color: #19065e;
+  /* background-color: rgba(0, 0, 0, 0.05); */
 }
 
 footer {
