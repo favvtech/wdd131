@@ -52,6 +52,8 @@ nav .linked {
 
 nav .linked:hover {
   text-decoration: underline;
+  color: #9afc8d;
+  background-color: rgba(0, 0, 0, 0.05);
   /* border: 1px solid #ffffffcc; */
   /* border-radius: 4px; */
 }
