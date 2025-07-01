@@ -83,7 +83,14 @@ h1{
   padding: 1rem;
   text-align: center;
 }
-
+.find-two{
+  background-color: #2e3b4e;
+  display: block;
+  color: #fff;
+  border-radius: 5px;
+  padding: 1.3rem;
+  text-align: center;
+}
 /* Card layout using CSS Grid */
 .card {
   display: grid;
