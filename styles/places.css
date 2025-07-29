@@ -1,0 +1,166 @@
+/* glolobal Variables */
+:root {
+  --color-red: #d32f2f;
+  --color-green: #2e7d32;
+  --color-white: rgba(255, 255, 255, 0.85);
+  --text-color: #333;
+  --heading-font: 'Segoe UI', sans-serif;
+  --body-font: 'Arial', sans-serif;
+}
+
+/*Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: #f3f3f3;
+  color: var(--text-color);
+}
+
+/*Header */
+header {
+  background-color: var(--color-red);
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  padding: 1.2em 0;
+  font-family: var(--heading-font);
+}
+
+/* Divider*/
+/*
+.accent-line {
+  border: none;
+  height: 4px;
+  background-color: var(--color-green);
+  margin: 0;
+}
+*/
+
+/* Footer */
+footer {
+  background-color: var(--color-red);
+  color: white;
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9em;
+  margin-top: 0;
+}
+
+/*Hero Section */
+.hero picture img {
+  display: block;
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 500px;
+  object-fit: cover;
+  margin-bottom: 0;
+}
+.hero{
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+/*Weather Panels */
+.info-panel, .weather-panel {
+  position: absolute;
+  background-color: var(--color-white);
+  color: var(--text-color);
+  padding: 1.2em;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  font-size: 1em;
+  line-height: 1.6;
+  width: fit-content;
+  max-width: 90%;
+  font-family: var(--body-font);
+}
+
+.panel-title {
+  background-color: var(--color-green);
+  color: white;
+  font-weight: bold;
+  font-size: 0.95em;
+  padding: 0.3em 0.6em;
+  display: inline-block;
+  margin-bottom: 0.8em;
+  border-radius: 4px;
+}
+
+/*Exact Box Placement */
+.info-panel {
+  top: 40px;
+  left: 40px;
+}
+
+.weather-panel {
+  bottom: 40px;
+  right: 40px;
+}
+
+/*Weather Icon */
+.weather-panel .panel-title::after {
+  /* content: " ☁"; */
+  content: none;
+  /* font-size: 1.1em;
+  margin-left: 6px; */
+}
+.panel-title img.weather-icon {
+  width: 1.2em;
+  height: auto;
+  vertical-align: middle;
+  margin-left: 6px;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+  .info-panel,
+  .weather-panel {
+    position: static;
+    margin: 1.5em auto;
+    display: block;
+  }
+
+  .weather-panel .panel-title::after {
+    content: ""; /* hide icon on small screens */
+  }
+
+  .hero {
+    min-height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header, footer {
+    padding: 0.8em;
+    font-size: 0.95em;
+  }
+
+  .info-panel,
+  .weather-panel {
+    font-size: 0.9em;
+    padding: 1em;
+    margin: 1em auto;
+    width: 100%;
+  }
+
+  .panel-title {
+    font-size: 0.85em;
+    padding: 0.2em 0.5em;
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Namibia Desert</title>
+  <link rel="stylesheet" href="styles/places.css">
+  <script src="scripts/places.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Namibian Desert</h1>
+  </header>
+
+  <section class="hero">
+    <picture>
+      <source srcset="images/hero-medium.webp" media="(min-width: 1000px)" />
+      <source srcset="images/hero-small.webp" media="(min-width: 500px)" />
+      <img src="images/hero-large.webp" width="1500" alt="Lemurs in Madagascar" />
+    </picture>
+
+    <!-- Country Infomation provided -->
+    <div class="info-panel">
+      <div class="panel-title">Country Data</div>
+      <p>Area: 824,000 sq km</p>
+      <p>Population: 2.6 Million Approximately</p>
+      <p>Capital: Windhoek</p>
+      <p>Languages: English, Afrikaans</p>
+      <p>Currency: Namibia Dollar (NAD)</p>
+      <p>Time Zone: UTC+2</p>
+      <p>Calling Code: +264</p>
+      <p>Internet Domain: .na</p>
+    </div>
+
+    <!-- Weather Infomation provided -->
+    <!-- <div class="weather-panel">
+      <div class="panel-title">
+        Weather
+        <img src="images/weathericon.svg" alt="weather icon" class="weather-icon"/>
+      </div>
+      <p>Temperature: 10°C</p>
+      <p>Conditions: Clear Skies With Coastal Fog</p>
+      <p>Wind: 5 km/h</p>
+      <p>Visibility: Excellent</p>
+    </div> -->
+    <div class="weather-panel">
+      <div class="panel-title">
+        Weather
+        <img src="images/weathericon.svg" alt="weather icon" class="weather-icon"/>
+      </div>
+      <p>Temperature: <span id="temperature">9</span>°C</p>
+      <p>Conditions: Partly Cloudy</p>
+      <p>Wind: <span id="wind">6</span> km/h</p>
+      <p>Wind Chill: <span id="windchill">Calculating...</span></p>
+      <p>Visibility: Excellent</p>
+    </div>
+  </section>
+
+  <!-- <footer>
+    <p>©2025 Rubia Magdalena Francesco @ Madagascar</p>
+    <p>Last Modification: 02/08/2024 22:47:47</p>
+  </footer> -->
+   <footer>
+    <p>&copy;<span id="currentyear"></span> 😎 Favour Igein 😎 Nigeria</p>
+    <!-- <p>Last Modified: June 2025</p> -->
+     <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
