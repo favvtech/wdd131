@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <link href="styles/form.css" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Thank you for submitting your review!</h1>
+    </header>
+    
+    <main>
+        <div class="tnks">
+            <p>Your feedback is valuable to us.</p>
+            <p>Total reviews submitted: <span id="reviewCount">0</span></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Favour Igein, Nigeria.</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        // Display the review count from localStorage
+        document.addEventListener('DOMContentLoaded', function() {
+            const reviewCount = localStorage.getItem('reviewsCount') || 0;
+            document.getElementById('reviewCount').textContent = reviewCount;
+            
+            // Update footer
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+            const lastModified = new Date(document.lastModified);
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('lastModified').textContent = `Last Modified: ${lastModified.toLocaleDateString(undefined, options)}`;
+        });
+    </script>
+</body>
+</html>
