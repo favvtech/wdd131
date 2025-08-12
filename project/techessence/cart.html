@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - TechEssence</title>
+    <meta name="description" content="Review your cart and checkout with TechEssence. Secure shopping for premium tech accessories.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>TechEssence</h1>
+                <span class="tagline">Must Have Tech Accessories</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="techessence.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="accessories.html" class="nav-link">Accessories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cart.html" class="nav-link active">Cart <span id="cart-count" class="cart-count">0</span></a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>Shopping Cart</h1>
+            <p>Review your selected accessories and proceed to checkout</p>
+        </div>
+    </section>
+
+    <!-- Cart Content -->
+    <section class="cart-section">
+        <div class="cart-container">
+            <!-- Cart items will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <!-- Continue Shopping -->
+    <section class="continue-shopping">
+        <div class="continue-shopping-content">
+            <a href="accessories.html" class="cta-button secondary">Continue Shopping</a>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Stay Updated</h2>
+            <p>Get the latest tech accessory trends and exclusive offers</p>
+            <form id="newsletter-form" class="newsletter-form">
+                <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+                <button type="submit" class="submit-btn">Subscribe</button>
+            </form>
+            <div id="newsletter-message" class="newsletter-message"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TechEssence</h3>
+                <p>Your trusted destination for premium tech accessories</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="techessence.html">Home</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: info@techessence.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h4>Student</h4>
+                <p>Favour Igein</p>
+                <p><a href="references.html">References</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TechEssence. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

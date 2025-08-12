@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories - TechEssence</title>
+    <meta name="description" content="Explore premium laptop and mobile accessories at TechEssence. Find the perfect tech gear for your needs.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>TechEssence</h1>
+                <span class="tagline">Must Have Tech Accessories</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="techessence.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="accessories.html" class="nav-link active">Accessories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cart.html" class="nav-link">Cart <span id="cart-count" class="cart-count">0</span></a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>Explore Accessories</h1>
+            <p>Discover premium tech accessories for your laptop and mobile devices</p>
+        </div>
+    </section>
+
+    <!-- Search and Filters -->
+    <section class="search-filters">
+        <div class="search-filters-container">
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" 
+                       id="search-input" 
+                       placeholder="Search accessories..." 
+                       class="search-input">
+                <button onclick="searchAccessories(document.getElementById('search-input').value)" 
+                        class="search-btn">Search</button>
+            </div>
+
+            <!-- Category Filters -->
+            <div class="filter-container">
+                <h3>Filter by Category:</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" 
+                            data-category="all" 
+                            onclick="filterAccessories('all')">
+                        All Accessories
+                    </button>
+                    <button class="filter-btn" 
+                            data-category="laptop" 
+                            onclick="filterAccessories('laptop')">
+                        Laptop Accessories
+                    </button>
+                    <button class="filter-btn" 
+                            data-category="mobile" 
+                            onclick="filterAccessories('mobile')">
+                        Mobile Accessories
+                    </button>
+                    <button class="filter-btn" 
+                            data-category="audio" 
+                            onclick="filterAccessories('audio')">
+                        Audio Gear
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accessories Grid -->
+    <section class="accessories-section">
+        <div class="accessories-container">
+            <!-- Accessories will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Stay Updated</h2>
+            <p>Get the latest tech accessory trends and exclusive offers</p>
+            <form id="newsletter-form" class="newsletter-form">
+                <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+                <button type="submit" class="submit-btn">Subscribe</button>
+            </form>
+            <div id="newsletter-message" class="newsletter-message"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TechEssence</h3>
+                <p>Your trusted destination for premium tech accessories</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="techessence.html">Home</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: info@techessence.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h4>Student</h4>
+                <p>Favour Igein</p>
+                <p><a href="references.html">References</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TechEssence. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
